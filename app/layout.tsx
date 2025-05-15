@@ -3,6 +3,7 @@ import { Lato } from "next/font/google";
 import "./globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
 import Navbar from "@/components/Navbar";
+import { Toaster } from "@/components/ui/toaster";
 
 const lato = Lato({
   subsets: ['latin'],
@@ -26,8 +27,9 @@ export default function RootLayout({
         <body className={`${lato.className} h-full bg-gray-50 antialiased`}>
           <div className="flex h-full">
             <Navbar />
-            <main className="flex-1 min-h-screen pl-0 lg:pl-64">
+            <main className="flex-1 min-h-screen pl-0 lg:pl-10">
               {children}
+              <Toaster/>
             </main>
           </div>
         </body>

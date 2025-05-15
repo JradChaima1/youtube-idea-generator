@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 
 export default function Hero() {
   return (
-    <div className="relative isolate overflow-hidden bg-gradient-to-b from-indigo-100/20">
+    <div className="relative isolate overflow-hidden bg-gradient-to-b from-indigo-100/20 pl-64">
       <div className="mx-auto max-w-7xl px-4 pb-24 pt-2 sm:pb-32 lg:flex lg:px-4 lg:py-20">
         <div className="max-w-2xl lg:mx-0 lg:max-w-xl lg:flex-shrink-0">
           <div className="mt-4 sm:mt-6 lg:mt-4">
